@@ -7,15 +7,8 @@
     </content>
     <orderEntry type="jdk" jdkName="17" jdkType="JavaSDK" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" exported="" name="junit-4.12" level="project" />
-    <orderEntry type="module-library" exported="">
-      <library>
-        <CLASSES>
-          <root url="jar://$MODULE_DIR$/lib/mysql-connector-java-8.0.30.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
+    <orderEntry type="library" exported="" name="junit-jupiter-api-5.8.1" level="project" />
+    <orderEntry type="library" exported="" name="mysql-connector-java-8.0.30" level="project" />
+    <orderEntry type="library" exported="" name="lib" level="project" />
   </component>
 </module>
