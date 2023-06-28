@@ -7,10 +7,7 @@ import org.junit.jupiter.api.Test;
 import java.io.IOException;
 import java.io.InputStream;
 import java.lang.reflect.InvocationTargetException;
-import java.sql.Connection;
-import java.sql.Driver;
-import java.sql.DriverManager;
-import java.sql.SQLException;
+import java.sql.*;
 import java.util.Properties;
 
 
@@ -146,7 +143,28 @@ public class ConnectionTest {
 
         // 4.获取连接
         Connection conn = DriverManager.getConnection(url, user, password);
-        System.out.println(conn);
+
+        // 5.创建小车
+        Statement statement = conn.createStatement();
+
+        // 6.发送SQL语句
+        String sql = "select * from customers;";
+        ResultSet resultSet = statement.executeQuery(sql);
+
+
+        // 7.结果集解析
+        while(resultSet.next()){
+            int id = resultSet.getInt("id");
+            String name = resultSet.getString("name");
+            String email = resultSet.getString("email");
+            Date birth = resultSet.getDate("birth");
+            System.out.println(id + "::" + name + "::" + email + "::" + birth);
+        }
+        // 8.关闭资源  【先开后关】
+        resultSet.close();
+        statement.close();
+        conn.close();
+
     }
 
 }
