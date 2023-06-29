@@ -89,7 +89,7 @@ public class PreparedStatementUpdateTest {
 
     // 向customers表中添加一条记录, 没有写JDBCJunit包时最初方法
     @Test
-    public void testInsert() throws SQLException, IOException, ClassNotFoundException, ParseException {
+    public void testInsert() {
 
 
         Connection conn = null;

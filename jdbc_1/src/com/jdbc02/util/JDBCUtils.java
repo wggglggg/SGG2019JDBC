@@ -21,7 +21,9 @@ public class JDBCUtils {
      * @throws ClassNotFoundException
      * @throws SQLException
      */
-    public static Connection getConnection() throws IOException, ClassNotFoundException, SQLException {
+    public static Connection getConnection() throws Exception {
+
+
         // 1.读取配置文件中的4个基本信息
         InputStream is = ClassLoader.getSystemClassLoader().getResourceAsStream("jdbc.properties");
 
@@ -39,16 +41,33 @@ public class JDBCUtils {
         // 3.获取连接
         Connection connection = DriverManager.getConnection(url, user, password);
 
+
         return connection;
     }
 
     public static void closeResource(Connection conn, Statement ps) {
-//        try {
-//            if (rs != null)
-//                rs.close();
-//        } catch (SQLException e) {
-//            e.printStackTrace();
-//        }
+
+        try {
+            if (ps != null)
+                ps.close();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        try {
+            if (conn != null)
+                conn.close();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public static void closeResource(Connection conn, Statement ps, ResultSet rs) {
+        try {
+            if (rs != null)
+                rs.close();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
         try {
             if (ps != null)
                 ps.close();
