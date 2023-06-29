@@ -1,5 +1,9 @@
 package com.jdbc02.statement.crud;
 
+
+
+import org.junit.Test;
+
 import java.io.IOException;
 import java.io.InputStream;
 import java.lang.reflect.Field;
@@ -21,7 +25,8 @@ public class StatementTest {
 
     // 使用Statement的弊端：需要拼写sql语句，并且存在SQL注入的问题
     // 如何避免出现sql注入：只要用 PreparedStatement(从Statement扩展而来) 取代 Statement
-    public static void main(String[] args) throws Exception {
+    @Test
+    public  void testLogin(String[] args) throws Exception {
         Scanner scanner = new Scanner(System.in);
 
         System.out.print("请输入用户名:");
