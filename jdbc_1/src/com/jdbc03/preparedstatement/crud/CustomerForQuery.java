@@ -1,10 +1,9 @@
 package com.jdbc03.preparedstatement.crud;
 
-import com.jdbc02.util.JDBCUtils;
+import com.jdbc03.util.JDBCUtils;
 import com.jdbc03.bean.Customer;
 import org.junit.Test;
 
-import java.io.IOException;
 import java.lang.reflect.Field;
 import java.sql.*;
 

@@ -1,25 +1,41 @@
-package com.jdbc03.preparedstatement.crud;
+package com.jdbc04.exer;
 
 import com.jdbc03.util.JDBCUtils;
 import org.junit.Test;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
+import java.util.Scanner;
 
 /**
- * ClassName: PreparedStatemUpdateTest
- * Description: 使用PreparedStatement来替换Statement,实现对数据表的增删改操作
+ * ClassName: Exer1Test
+ * Description:
  *
  * @Author wggglggg
- * @Create 2023/7/3 8:41
+ * @Create 2023/7/3 8:51
  * @Version 1.0
  */
-public class PreparedStatementUpdateTest {
+public class Exer1Test {
 
     @Test
-    public void testCommonUpdate(){
-        String sql = "update `order` set order_name = ? where order_id = ?";
-        update(sql, "DD", 2);
+    public void testInsert(){
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("请输入用户名：");
+        String name = scanner.next();
+        System.out.print("请输入邮箱：");
+        String email = scanner.next();
+        System.out.print("请输入生日：");
+        String birthday = scanner.next();
+
+        String sql = "insert into customers(name, email, birth) values(?,?,?)";
+        int insertCount = update(sql, name, email, birthday);
+
+        if (insertCount > 0){
+            System.out.println("添加成功");
+
+        }else{
+            System.out.println("添加失败");
+        }
     }
 
     //通用的增删改操作

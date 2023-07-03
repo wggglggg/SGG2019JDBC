@@ -1,4 +1,4 @@
-package com.jdbc02.util;
+package com.jdbc03.util;
 
 import java.io.IOException;
 import java.io.InputStream;
