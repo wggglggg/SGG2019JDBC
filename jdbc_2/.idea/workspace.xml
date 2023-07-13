@@ -14,6 +14,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
+        <option value="Tag Library Descriptor" />
+        <option value="XML Properties File" />
         <option value="Class" />
       </list>
     </option>
@@ -34,7 +36,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/wggglggg/OneDrive/venvs/JavaProjects/JDBC/SGG2019JDBC/jdbc_2/src/com/jdbc203",
+    "last_opened_file_path": "C:/Users/wggglggg/OneDrive/venvs/JavaProjects/JDBC/SGG2019JDBC/jdbc_2/lib",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -48,89 +50,89 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\wggglggg\OneDrive\venvs\JavaProjects\JDBC\SGG2019JDBC\jdbc_2\lib" />
+      <recent name="C:\Users\wggglggg\OneDrive\venvs\JavaProjects\JDBC\SGG2019JDBC\jdbc_2\src\com\jdbc204\connection" />
       <recent name="C:\Users\wggglggg\OneDrive\venvs\JavaProjects\JDBC\SGG2019JDBC\jdbc_2\src\com\jdbc203\" />
       <recent name="C:\Users\wggglggg\OneDrive\venvs\JavaProjects\JDBC\SGG2019JDBC\jdbc_2\src\com\jdbc202\bean" />
       <recent name="C:\Users\wggglggg\OneDrive\venvs\JavaProjects\JDBC\SGG2019JDBC\jdbc_2\src\com\jdbc202" />
-      <recent name="C:\Users\wggglggg\OneDrive\venvs\JavaProjects\JDBC\SGG2019JDBC\jdbc_2\src\com\jdbc201\transaction" />
-      <recent name="C:\Users\wggglggg\OneDrive\venvs\JavaProjects\JDBC\SGG2019JDBC\jdbc_2\lib" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.CustomerDAOImplTest.testGetAll (1)">
-    <configuration name="CustomerDAOImplTest.testGetAll (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.DruidTest.testDruidConnectionWithUtils">
+    <configuration name="DBCPTest.testConnection" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="jdbc_2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.jdbc203.JutilTest.*" />
+          <option name="PATTERN" value="com.jdbc204.connection.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.jdbc203.JutilTest" />
-      <option name="MAIN_CLASS_NAME" value="com.jdbc203.JutilTest.CustomerDAOImplTest" />
-      <option name="METHOD_NAME" value="testGetAll" />
+      <option name="PACKAGE_NAME" value="com.jdbc204.connection" />
+      <option name="MAIN_CLASS_NAME" value="com.jdbc204.connection.DBCPTest" />
+      <option name="METHOD_NAME" value="testConnection" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CustomerDAOImplTest.testGetAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="DBCPTest.testConnectionByProperties" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="jdbc_2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.jdbc202.JutilTest.*" />
+          <option name="PATTERN" value="com.jdbc204.connection.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.jdbc202.JutilTest" />
-      <option name="MAIN_CLASS_NAME" value="com.jdbc202.JutilTest.CustomerDAOImplTest" />
-      <option name="METHOD_NAME" value="testGetAll" />
+      <option name="PACKAGE_NAME" value="com.jdbc204.connection" />
+      <option name="MAIN_CLASS_NAME" value="com.jdbc204.connection.DBCPTest" />
+      <option name="METHOD_NAME" value="testConnectionByProperties" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CustomerDAOImplTest.testGetCount" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="DBCPTest.testConnectionByPropertiesWithUtils" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="jdbc_2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.jdbc202.JutilTest.*" />
+          <option name="PATTERN" value="com.jdbc204.connection.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.jdbc202.JutilTest" />
-      <option name="MAIN_CLASS_NAME" value="com.jdbc202.JutilTest.CustomerDAOImplTest" />
-      <option name="METHOD_NAME" value="testGetCount" />
+      <option name="PACKAGE_NAME" value="com.jdbc204.connection" />
+      <option name="MAIN_CLASS_NAME" value="com.jdbc204.connection.DBCPTest" />
+      <option name="METHOD_NAME" value="testConnectionByPropertiesWithUtils" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CustomerDAOImplTest.testGetCustomerById (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="DruidTest.testConnection" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="jdbc_2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.jdbc203.JutilTest.*" />
+          <option name="PATTERN" value="com.jdbc204.connection.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.jdbc203.JutilTest" />
-      <option name="MAIN_CLASS_NAME" value="com.jdbc203.JutilTest.CustomerDAOImplTest" />
-      <option name="METHOD_NAME" value="testGetCustomerById" />
+      <option name="PACKAGE_NAME" value="com.jdbc204.connection" />
+      <option name="MAIN_CLASS_NAME" value="com.jdbc204.connection.DruidTest" />
+      <option name="METHOD_NAME" value="testConnection" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CustomerDAOImplTest.testGetMaxBirth" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="DruidTest.testDruidConnectionWithUtils" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="jdbc_2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.jdbc202.JutilTest.*" />
+          <option name="PATTERN" value="com.jdbc204.connection.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.jdbc202.JutilTest" />
-      <option name="MAIN_CLASS_NAME" value="com.jdbc202.JutilTest.CustomerDAOImplTest" />
-      <option name="METHOD_NAME" value="testGetMaxBirth" />
+      <option name="PACKAGE_NAME" value="com.jdbc204.connection" />
+      <option name="MAIN_CLASS_NAME" value="com.jdbc204.connection.DruidTest" />
+      <option name="METHOD_NAME" value="testDruidConnectionWithUtils" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -138,11 +140,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.CustomerDAOImplTest.testGetAll (1)" />
-        <item itemvalue="JUnit.CustomerDAOImplTest.testGetCustomerById (1)" />
-        <item itemvalue="JUnit.CustomerDAOImplTest.testGetMaxBirth" />
-        <item itemvalue="JUnit.CustomerDAOImplTest.testGetCount" />
-        <item itemvalue="JUnit.CustomerDAOImplTest.testGetAll" />
+        <item itemvalue="JUnit.DruidTest.testDruidConnectionWithUtils" />
+        <item itemvalue="JUnit.DruidTest.testConnection" />
+        <item itemvalue="JUnit.DBCPTest.testConnectionByPropertiesWithUtils" />
+        <item itemvalue="JUnit.DBCPTest.testConnectionByProperties" />
+        <item itemvalue="JUnit.DBCPTest.testConnection" />
       </list>
     </recent_temporary>
   </component>
@@ -158,6 +160,8 @@
       <workItem from="1688686290583" duration="13943000" />
       <workItem from="1688736103447" duration="48000" />
       <workItem from="1688773320319" duration="5676000" />
+      <workItem from="1688884347094" duration="30000" />
+      <workItem from="1689233285079" duration="4051000" />
     </task>
     <servers />
   </component>
