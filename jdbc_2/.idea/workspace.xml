@@ -51,88 +51,88 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\wggglggg\OneDrive\venvs\JavaProjects\JDBC\SGG2019JDBC\jdbc_2\lib" />
+      <recent name="C:\Users\wggglggg\OneDrive\venvs\JavaProjects\JDBC\SGG2019JDBC\jdbc_2\src" />
       <recent name="C:\Users\wggglggg\OneDrive\venvs\JavaProjects\JDBC\SGG2019JDBC\jdbc_2\src\com\jdbc204\connection" />
       <recent name="C:\Users\wggglggg\OneDrive\venvs\JavaProjects\JDBC\SGG2019JDBC\jdbc_2\src\com\jdbc203\" />
       <recent name="C:\Users\wggglggg\OneDrive\venvs\JavaProjects\JDBC\SGG2019JDBC\jdbc_2\src\com\jdbc202\bean" />
-      <recent name="C:\Users\wggglggg\OneDrive\venvs\JavaProjects\JDBC\SGG2019JDBC\jdbc_2\src\com\jdbc202" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.DruidTest.testDruidConnectionWithUtils">
-    <configuration name="DBCPTest.testConnection" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.QueryRunnerTest.testQuery7">
+    <configuration name="QueryRunnerTest.testBeanListHandler" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="jdbc_2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.jdbc204.connection.*" />
+          <option name="PATTERN" value="com.jdbc205.dbutils.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.jdbc204.connection" />
-      <option name="MAIN_CLASS_NAME" value="com.jdbc204.connection.DBCPTest" />
-      <option name="METHOD_NAME" value="testConnection" />
+      <option name="PACKAGE_NAME" value="com.jdbc205.dbutils" />
+      <option name="MAIN_CLASS_NAME" value="com.jdbc205.dbutils.QueryRunnerTest" />
+      <option name="METHOD_NAME" value="testBeanListHandler" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DBCPTest.testConnectionByProperties" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="QueryRunnerTest.testMapHanderQuery" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="jdbc_2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.jdbc204.connection.*" />
+          <option name="PATTERN" value="com.jdbc205.dbutils.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.jdbc204.connection" />
-      <option name="MAIN_CLASS_NAME" value="com.jdbc204.connection.DBCPTest" />
-      <option name="METHOD_NAME" value="testConnectionByProperties" />
+      <option name="PACKAGE_NAME" value="com.jdbc205.dbutils" />
+      <option name="MAIN_CLASS_NAME" value="com.jdbc205.dbutils.QueryRunnerTest" />
+      <option name="METHOD_NAME" value="testMapHanderQuery" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DBCPTest.testConnectionByPropertiesWithUtils" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="QueryRunnerTest.testMapListHandlerQuery" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="jdbc_2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.jdbc204.connection.*" />
+          <option name="PATTERN" value="com.jdbc205.dbutils.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.jdbc204.connection" />
-      <option name="MAIN_CLASS_NAME" value="com.jdbc204.connection.DBCPTest" />
-      <option name="METHOD_NAME" value="testConnectionByPropertiesWithUtils" />
+      <option name="PACKAGE_NAME" value="com.jdbc205.dbutils" />
+      <option name="MAIN_CLASS_NAME" value="com.jdbc205.dbutils.QueryRunnerTest" />
+      <option name="METHOD_NAME" value="testMapListHandlerQuery" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DruidTest.testConnection" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="QueryRunnerTest.testQuery7" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="jdbc_2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.jdbc204.connection.*" />
+          <option name="PATTERN" value="com.jdbc205.dbutils.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.jdbc204.connection" />
-      <option name="MAIN_CLASS_NAME" value="com.jdbc204.connection.DruidTest" />
-      <option name="METHOD_NAME" value="testConnection" />
+      <option name="PACKAGE_NAME" value="com.jdbc205.dbutils" />
+      <option name="MAIN_CLASS_NAME" value="com.jdbc205.dbutils.QueryRunnerTest" />
+      <option name="METHOD_NAME" value="testQuery7" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DruidTest.testDruidConnectionWithUtils" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="QueryRunnerTest.testScalarHandlerQuery" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="jdbc_2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.jdbc204.connection.*" />
+          <option name="PATTERN" value="com.jdbc205.dbutils.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.jdbc204.connection" />
-      <option name="MAIN_CLASS_NAME" value="com.jdbc204.connection.DruidTest" />
-      <option name="METHOD_NAME" value="testDruidConnectionWithUtils" />
+      <option name="PACKAGE_NAME" value="com.jdbc205.dbutils" />
+      <option name="MAIN_CLASS_NAME" value="com.jdbc205.dbutils.QueryRunnerTest" />
+      <option name="METHOD_NAME" value="testScalarHandlerQuery" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -140,11 +140,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.DruidTest.testDruidConnectionWithUtils" />
-        <item itemvalue="JUnit.DruidTest.testConnection" />
-        <item itemvalue="JUnit.DBCPTest.testConnectionByPropertiesWithUtils" />
-        <item itemvalue="JUnit.DBCPTest.testConnectionByProperties" />
-        <item itemvalue="JUnit.DBCPTest.testConnection" />
+        <item itemvalue="JUnit.QueryRunnerTest.testQuery7" />
+        <item itemvalue="JUnit.QueryRunnerTest.testScalarHandlerQuery" />
+        <item itemvalue="JUnit.QueryRunnerTest.testMapListHandlerQuery" />
+        <item itemvalue="JUnit.QueryRunnerTest.testMapHanderQuery" />
+        <item itemvalue="JUnit.QueryRunnerTest.testBeanListHandler" />
       </list>
     </recent_temporary>
   </component>
@@ -161,7 +161,7 @@
       <workItem from="1688736103447" duration="48000" />
       <workItem from="1688773320319" duration="5676000" />
       <workItem from="1688884347094" duration="30000" />
-      <workItem from="1689233285079" duration="4051000" />
+      <workItem from="1689233285079" duration="7750000" />
     </task>
     <servers />
   </component>
