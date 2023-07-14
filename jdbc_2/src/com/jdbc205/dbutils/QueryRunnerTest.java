@@ -2,6 +2,8 @@ package com.jdbc205.dbutils;
 
 import com.jdbc202.bean.Customer;
 import com.jdbc204.util.JDBCUtils;
+import com.jdbc205.dbutils.dao.CustomerDAO;
+import com.jdbc205.dbutils.dao.CustomerDAOImpl;
 import org.apache.commons.dbutils.QueryRunner;
 import org.apache.commons.dbutils.ResultSetHandler;
 import org.apache.commons.dbutils.handlers.*;
@@ -26,17 +28,17 @@ import java.util.Map;
  */
 public class QueryRunnerTest {
 
+    CustomerDAOImpl customerDAO = new CustomerDAOImpl();
     //测试插入
     @Test
     public void testInsert() {
         Connection druidConnection = null;
         try {
-            QueryRunner queryRunner = new QueryRunner();
+
             druidConnection = JDBCUtils.getDruidConnection();
-            String sql = "insert into customers(name,email, birth) values(?, ?, ?)";
             SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
             long birth = sdf.parse("1975-5-3").getTime();
-            int rows = queryRunner.update(druidConnection, sql, "蔡灿得", "caicande@163.com", new Date(birth));
+            int rows = customerDAO.update(druidConnection, "蔡灿得", "caicande@163.com", new Date(birth));
             System.out.println(rows>0 ? "正常" : "失败");
         } catch (SQLException e) {
             e.printStackTrace();
@@ -56,11 +58,8 @@ public class QueryRunnerTest {
         Connection connection = null;
         try {
             connection = JDBCUtils.getDruidConnection();
-            String sql = "select * from customers where id = ?";
 
-            BeanHandler<Customer> beanHandler = new BeanHandler<>(Customer.class);
-            QueryRunner queryRunner = new QueryRunner();
-            Customer customer = queryRunner.query(connection,sql, beanHandler, 24);
+            Customer customer = customerDAO.getCustomerById(connection,24);
             System.out.println(customer);
         } catch (Exception e) {
             e.printStackTrace();
@@ -78,12 +77,8 @@ public class QueryRunnerTest {
         Connection druidConnection = null;
         try {
             druidConnection = JDBCUtils.getDruidConnection();
-            String sql = "select * from customers where id < ?";
 
-            QueryRunner queryRunner = new QueryRunner();
-            BeanListHandler<Customer> beanListHandler = new BeanListHandler<>(Customer.class);
-
-            List<Customer> list = queryRunner.query(druidConnection, sql, beanListHandler, 24);
+            List<Customer> list = customerDAO.getAll(druidConnection);
             list.forEach(System.out::println);
         } catch (SQLException e) {
             e.printStackTrace();
@@ -92,27 +87,7 @@ public class QueryRunnerTest {
         }
     }
 
-    /*
-     * MapHander:是ResultSetHandler接口的实现类，对应表中的一条记录。
-     * 将字段及相应字段的值作为map中的key和value
-     */
-    @Test
-    public void testMapHanderQuery(){
-        Connection druidConnection = null;
-        try {
-            druidConnection = JDBCUtils.getDruidConnection();
-            String sql = "select * from customers where id = ?";
 
-            MapHandler mapHandler = new MapHandler();
-            QueryRunner queryRunner = new QueryRunner();
-            Map<String, Object> map = queryRunner.query(druidConnection, sql, mapHandler, 24);
-            System.out.println("map = " + map);
-        } catch (SQLException e) {
-            e.printStackTrace();
-        } finally {
-            JDBCUtils.closeResource(druidConnection, null);
-        }
-    }
 
     /*
      * MapListHander:是ResultSetHandler接口的实现类，对应表中的多条记录。
@@ -145,11 +120,7 @@ public class QueryRunnerTest {
         Connection druidConnection = null;
         try {
             druidConnection = JDBCUtils.getDruidConnection();
-            String sql = "select count(*) from customers where name like ?";
-
-            ScalarHandler scalarHandler = new ScalarHandler();
-            QueryRunner queryRunner = new QueryRunner();
-            Long count = (Long) queryRunner.query(druidConnection, sql, scalarHandler, "%李%");
+            Long count = customerDAO.getCount(druidConnection, "%李%");
             System.out.println("count = " + count);
         } catch (SQLException e) {
             e.printStackTrace();

@@ -36,7 +36,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/wggglggg/OneDrive/venvs/JavaProjects/JDBC/SGG2019JDBC/jdbc_2/lib",
+    "last_opened_file_path": "C:/Users/wggglggg/OneDrive/venvs/JavaProjects/JDBC/SGG2019JDBC/jdbc_2/src/com/jdbc205/dbutils",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -50,14 +50,14 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\wggglggg\OneDrive\venvs\JavaProjects\JDBC\SGG2019JDBC\jdbc_2\src\com\jdbc205\dbutils" />
       <recent name="C:\Users\wggglggg\OneDrive\venvs\JavaProjects\JDBC\SGG2019JDBC\jdbc_2\lib" />
       <recent name="C:\Users\wggglggg\OneDrive\venvs\JavaProjects\JDBC\SGG2019JDBC\jdbc_2\src" />
       <recent name="C:\Users\wggglggg\OneDrive\venvs\JavaProjects\JDBC\SGG2019JDBC\jdbc_2\src\com\jdbc204\connection" />
       <recent name="C:\Users\wggglggg\OneDrive\venvs\JavaProjects\JDBC\SGG2019JDBC\jdbc_2\src\com\jdbc203\" />
-      <recent name="C:\Users\wggglggg\OneDrive\venvs\JavaProjects\JDBC\SGG2019JDBC\jdbc_2\src\com\jdbc202\bean" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.QueryRunnerTest.testQuery7">
+  <component name="RunManager" selected="JUnit.QueryRunnerTest.testScalarHandlerQuery">
     <configuration name="QueryRunnerTest.testBeanListHandler" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="jdbc_2" />
       <extension name="coverage">
@@ -140,11 +140,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.QueryRunnerTest.testQuery7" />
         <item itemvalue="JUnit.QueryRunnerTest.testScalarHandlerQuery" />
         <item itemvalue="JUnit.QueryRunnerTest.testMapListHandlerQuery" />
         <item itemvalue="JUnit.QueryRunnerTest.testMapHanderQuery" />
         <item itemvalue="JUnit.QueryRunnerTest.testBeanListHandler" />
+        <item itemvalue="JUnit.QueryRunnerTest.testQuery7" />
       </list>
     </recent_temporary>
   </component>
@@ -162,6 +162,7 @@
       <workItem from="1688773320319" duration="5676000" />
       <workItem from="1688884347094" duration="30000" />
       <workItem from="1689233285079" duration="7750000" />
+      <workItem from="1689296496102" duration="5453000" />
     </task>
     <servers />
   </component>
